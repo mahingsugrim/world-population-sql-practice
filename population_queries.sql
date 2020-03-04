@@ -8,3 +8,10 @@ FROM population_years
 WHERE country = 'Gabon'
 ORDER BY population DESC
 LIMIT 1;
+
+-- Q5 - What were the 10 lowest population countries in 2005?
+SELECT country
+FROM population_years
+WHERE year = 2005
+ORDER BY population ASC
+LIMIT 10;
