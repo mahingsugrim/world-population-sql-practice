@@ -25,3 +25,12 @@ WHERE year = 2010 AND population > 100;
 SELECT DISTINCT country
 FROM population_years
 WHERE country LIKE '%Islands%';
+
+-- Q8 - What is the difference in population between 2000 and 2010 in Indonesia?
+-- Note: it’s okay to figure out the difference by hand after pulling the correct data.
+SELECT *
+FROM population_years
+WHERE
+country = 'Indonesia' AND year = 2000
+OR
+country = 'Indonesia' AND year = 2010;
