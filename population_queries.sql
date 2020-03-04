@@ -20,3 +20,8 @@ LIMIT 10;
 SELECT DISTINCT country
 FROM population_years
 WHERE year = 2010 AND population > 100;
+
+-- Q7 - How many countries in this dataset have the word “Islands” in their name?
+SELECT DISTINCT country
+FROM population_years
+WHERE country LIKE '%Islands%';
