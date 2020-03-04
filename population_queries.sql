@@ -15,3 +15,8 @@ FROM population_years
 WHERE year = 2005
 ORDER BY population ASC
 LIMIT 10;
+
+-- Q6 - What are all the distinct countries with a population of over 100 million in the year 2010?
+SELECT DISTINCT country
+FROM population_years
+WHERE year = 2010 AND population > 100;
